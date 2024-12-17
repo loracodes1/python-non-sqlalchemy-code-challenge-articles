@@ -25,14 +25,14 @@ class TestArticle:
         article_1 = Article(author, magazine, "How to wear a tutu with style")
 
         # comment out the next two lines if using Exceptions
-        #article_1.title = 500
-        #assert article_1.title == "How to wear a tutu with style"
+        # article_1.title = 500
+        # assert article_1.title == "How to wear a tutu with style"
         
         assert isinstance(article_1.title, str)
 
         # uncomment the next two lines if using Exceptions
         with pytest.raises(Exception):
-             Article(author, magazine, 500)
+            Article(author, magazine, 500)
 
     def test_title_is_valid(self):
         """title is between 5 and 50 characters inclusive"""
